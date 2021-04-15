@@ -1,0 +1,130 @@
+#banner{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    background-color:rgba(160, 160, 160, 0.828);
+    position: relative;
+}
+#banner p{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
+}
+#clientes{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: rgb(36, 36, 36);
+    color: rgb(224, 224, 224);    
+}
+#nossosclientes{
+    font-family: monospace;
+    color: rgb(224, 224, 224);    
+    font-size: xx-large;
+    letter-spacing: 1px;
+}
+h2{
+    text-align: center;
+    margin: 10px;
+}
+#clientes h3{
+    color: #007566;
+    text-shadow: 0.1em 0.1em 0.1em gray;
+    letter-spacing: 1px;
+    padding-top:30px;
+    font-size: 1.4em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#clientes p{
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    color: rgb(224, 224, 224);    
+    text-indent: 30px;
+    text-align: center;
+    margin: 20px 80px;
+    padding-top: 20px;
+    white-space: pre-line;
+    
+}
+#clientes img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+}
+
+#central{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+}
+#central h3{
+    color: whitesmoke;
+}
+h3{
+   line-height: 1.9em;
+}
+
+#formulario{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 30%;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(36, 36, 36);
+}
+
+#formContato{
+    font-size: 1.5em;
+    font-family:monospace;
+    color: #d0f1e2;
+}
+
+#formContato h3{
+    color: #36af9e;
+    font-size: 1.7em;
+    font-family:monospace;
+}
+
+#mensagem p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family:monospace;
+}
+
+#enviar{
+    margin-top: 10px;
+    margin-left: 250px;
+    background-color: #36af9e;
+    width: 120px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.4em;
+    border-radius: 10px;
+}
+.caixa {
+    height: 30px;
+    margin: 10px;
+    border-radius: 6px;
+}
+#imagemfixa{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 1%;
+    top:150px;
+}

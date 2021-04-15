@@ -1,0 +1,89 @@
+
+#banner{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    background-color:rgba(160, 160, 160, 0.828);
+}
+#banner p{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+#solucao{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color:rgba(190, 190, 190, 0.828);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#solucao h2{
+    color: #007566;
+    letter-spacing: 1px;
+}
+#solucao p{
+    text-align: center;
+    color: rgb(41, 41, 41);
+    line-height: 1.3em;
+    margin: 0px 40px;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+#solucao img, #covid img{
+    width: 80%;
+}
+.coluna{
+    width: 30%;
+}
+h2{
+    font-size: 1.7em;
+    line-height: 1.9em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+li{
+    list-style-image: url('../imagens/globalhitss.png');
+    line-height: 1.7em;
+}
+
+#covid{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color:rgba(190, 190, 190, 0.828);
+
+}
+#covid h2{
+    text-align: center;
+    color: #007566;
+}
+#covid p{
+    text-align: center;
+    line-height: 1.3em;
+    margin: 10px 40px;
+    color: rgb(41, 41, 41);
+}
+.solucoescovid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.colunacovid p{
+    font-size: 1.3em;
+}
+
+.colunacovid{
+    width: 40%;
+}
+

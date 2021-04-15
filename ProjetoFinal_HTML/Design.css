@@ -1,0 +1,179 @@
+.designtítulo {
+  font-family: monospace;
+  font-size: 50px;
+  font-weight: 30px;
+  word-spacing: 5px;
+  margin-left: 70px;
+  padding: 0;
+  border: 0;
+}
+
+.imgdesign {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.textodesign {
+  font-family: Helvetica;
+  font-size: 15px;
+  text-align: left;
+  word-spacing: 5px;
+  line-height: 1.8;
+  width: 60%;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 0;  
+}
+
+.linkformulário{
+  float: right;
+}
+
+.imgadobe {
+    width: 50%;
+    float: right;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 70px; 
+}
+
+.adobetítulo {
+  font-family: monospace;
+  font-size: 50px;
+  text-align: left;
+  word-spacing: 5px;
+  width: 60;
+  float: left;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-left: 70px;
+  margin-right: 0; 
+}
+
+.textoadobe {
+  font-family: Helvetica;
+  font-size: 15px;
+  text-align: left;
+  word-spacing: 5px;
+  line-height: 1.8;
+  width: 35%;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 0; 
+}
+
+.imgautocad {
+  width: 50%;
+  float: left;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 70px; 
+  margin-right: 0;
+}
+
+.autocadtítulo {
+  font-family: monospace;
+  font-size: 50px;
+  text-align: right;
+  word-spacing: 5px;
+  width: 60;
+  float: right;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 70px;  
+}
+
+.textoautocad {
+  font-family: Helvetica;
+  font-size: 15px;
+  text-align: right;
+  word-spacing: 5px;
+  line-height: 1.8;
+  width: 35%;
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 70px;
+}
+
+.imguxui {
+  width: 50%; 
+  float: right;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 70px;   
+}
+
+.uxuitítulo {
+  font-family: monospace;
+  font-size: 50px;
+  text-align: left;
+  word-spacing: 5px;
+  width: 60;
+  float: left;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-left: 70px;
+  margin-right: 0;
+}
+
+.textouxui {
+  font-family: Helvetica;
+  font-size: 15px;
+  text-align: left;
+  word-spacing: 5px;
+  line-height: 1.8;
+  width: 35%;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 0;
+}
+
+.imgcorel {
+  width: 50%;
+  float: left;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 0px; 
+}
+
+.coreltítulo {
+  font-family: monospace;
+  font-size: 50px;
+  text-align: right;
+  word-spacing: 5px;
+  width: 60;
+  float: right;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 70px;
+}
+
+.textocorel {
+  font-family: Helvetica;
+  font-size: 15px;
+  text-align: right;
+  word-spacing: 5px;
+  line-height: 1.8;
+  width: 35%;
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 70px;
+}

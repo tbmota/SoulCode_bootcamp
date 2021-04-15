@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(to bottom, rgba(255, 166, 0, 0.452) , rgba(255, 255, 0, 0.486), rgba(0, 128, 0, 0.575), rgba(0, 255, 255, 0.52), rgba(0, 0, 255, 0.513), rgba(238, 130, 238, 0.486));
+}
+#banner{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    background-color:rgba(160, 160, 160, 0.828);
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+}
+#banner p{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: center;
+    color: rgb(92, 87, 87);
+    font-weight: 600;
+}
+
+#solucao{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color:rgba(190, 190, 190, 0.828);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+#solucao h2{
+    color: #007566;
+    letter-spacing: 1px;
+}
+#solucao p{
+    text-align: center;
+    color: rgb(92, 87, 87);
+    line-height: 1.3em;
+    margin: 0px 40px;
+    font-size: 1.2em;
+}
+
+#solucao img, #covid img{
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px 0;
+
+}
+.coluna{
+    width: 30%;
+}
+h2{
+    font-size: 1.7em;
+    line-height: 1.9em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+li{
+    list-style-image: url('../imagens/globalhitss.png');
+    line-height: 1.7em;
+}
+
+#covid{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-radius: 20px;
+    background-color: white;
+
+}
+#covid h2{
+    text-align: center;
+    color: #007566;
+}
+#covid p{
+    text-align: center;
+    line-height: 1.2em;
+    margin: 10px 40px;
+    color: rgb(92, 87, 87);
+}
+.solucoescovid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.colunacovid p{
+    font-size: 1.3em;
+}
+
+.colunacovid{
+    width: 40%;
+}
+

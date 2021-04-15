@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cursos do Site SoulCode</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+    <header id=topo align="center">
+        <table width="100%">
+            <tr>
+                <td>
+                    <img src="img/logo-azul.png" alt="logotipo soulcode" width="300px" >
+                    <nav > 
+                        <ul class="menu"> 
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Equipe</a></li>
+                            <li><a href="#">Trilhas</a>
+                                <ul>
+                                    <li><a href="design.html">Design</a></li>
+                                    <li><a href="desenvolvimento.html">Desenvolvimento</a></li>
+                                    <li><a href="ti.html">TI e Software</a></li> 
+                                    <li><a href="pessoal.html">Desenvolvimento Pessoal</a></li>                  
+                                </ul>
+                            </li>
+                            <li><a href="#">Cursos</a>
+                                <ul class="submenu">
+                                    <li><a href="photoshop.html">Adobe Photoshop</a></li>
+                                    <li><a href="cad.html">AutoCAD</a></li>
+                                    <li><a href="uxui.html">UX e UI</a></li> 
+                                    <li><a href="corel.html">Corel Draw</a></li>
+                                    <li><a href="htmlcss.html">HTML</a></li>
+                                    <li><a href="javascript.html">JavaScript</a></li>    
+                                    <li><a href="java.html">Java e Orientação a Objetos</a></li>             
+                                    <li><a href="android.html">Android</a></li>
+                                    <li><a href="manu.html">Manuetenção de Computadores</a></li>
+                                    <li><a href="redes.html">Redes de Computadores</a></li>
+                                    <li><a href="algo.html">Algoritmos e Lógica de Programação</a></li>
+                                    <li><a href="python.html">Python</a></li>
+                                    <li><a href="inteligencia.html">Inteligência Emocional</a></li>
+                                    <li><a href="pessoas.html">Gestão de Pessoas</a></li>
+                                    <li><a href="falar.html">Como Falar Bem em Público</a></li>
+                                    <li><a href="tempo.html">Gestão de Tempo</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contato</a></li>               
+                        </ul>            
+                    </nav>
+                </td>
+            </tr>
+        </table>                       
+    </header>
+
+    <main class="formulario">
+        <h3> Formulário de Inscrição</h3>
+        
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td><label for="Nome">Nome</label></td>
+                    <td><input type="text" id="Nome" autofocus required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="RG">RG</label></td>
+                    <td><input type="text" id="RG" placeholder="somente números"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="CPF">CPF</label></td>
+                    <td><input type="text" id="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="XXX.XXX.XXX-XX" placeholder="XXX.XXX.XXX-XX"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="date">Data de Nascimento</label></td>
+                    <td><input type="date" id="date" style="width:172px ;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="E-mail">E-mail</label></td>
+                    <td><input type="email" id="E-mail" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Telefone">Telefone</label></td>
+                    <td><input type="tel" id="Telefone" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Endereço">Endereço</label></td>
+                    <td><input type="text" id="Endereço" title="Rua, número, bairro, cidade, estado"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="cursos">Cursos</label></td>
+
+                    <td>
+                        <input list="cursos"  required/>
+                        <datalist id="cursos">
+                            <option value="Adobe Photoshop">
+                            <option value="AutoCAD">
+                            <option value="UX e UI">
+                            <option value="Corel Draw">
+                            <option value="HTML/CSS">
+                            <option value="JavaScript e JQuery">
+                            <option value="Java e Orientação a Objetos">
+                            <option value="Android">
+                            <option value="Manutenção de Computadores">
+                            <option value="Redes de Computadores">
+                            <option value="Algoritmos e Lógica de Programação">
+                            <option value="Python">
+                            <option value="Inteligência Emocional">
+                            <option value="Gestão de Pessoas">
+                            <option value="Como falar bem em Público">
+                            <option value="Gestão do Tempo">
+                        
+                        </datalist>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td><label for="ComprovanteRG"> Comprovante RG</label></td>
+                    <td><input type="file" id="ComprovanteRG"></td>
+                </tr>        
+
+                <tr>
+                    <td><label for="Comprovantepessoafisica">Comprovante CPF</label></td>
+                    <td><input type="file" id="comprovantepessoafisica"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Comprovantederesidencia">Comprovante de residência</label></td>
+                    <td><input type="file" id="comprovante de residencia"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" height="50px">
+                    <button id="botaoEnviar" type="submit">ENVIAR</button>
+                    </td>
+                </tr>
+            </table>
+            <script type="text/javascript" src="./script.js"></script>
+        </form>
+    </main>\
+
+    <footer class="rodape" >            
+        <table width="100%" height="90px" cellspacing="0" cellpadding="10px"> 
+            <tr> <!--linha da seta-->
+                <td colspan="3" align="right"><a href="#topo"><img src="img/seta.png" alt="seta para o topo" width="50px" ></a></td>
+            </tr>
+            <!--tabela do rodapé -->
+            <tr bgcolor="black">
+                                         
+
+                <td><!--coluna 1-->
+                    <table ><!--tabela dos links PRECISA COLOCAR NAV?-->
+                        <tr>
+                            <td><img src="img/telefone.png" width= "30px" alt="ícone telefone"></td>
+                            <td colspan="4"> (11) 4810-3644</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/correio.png" width= "30px" alt="ícone carta"></td>
+                            <td colspan="4">contato@soulcodeacademy.org</a></td>
+                        </tr>
+                        <tr align="right" >
+                            <td><a href="https://www.facebook.com/SoulCodeAcademy"><img src="img/facebook.png" width= "30px" alt="ícone facebook"></a> </td>
+                            <td><a href="https://www.linkedin.com/company/soulcodebrasil/"><img src="img/linkedin.png" width= "30px" alt="ícone linkedin"></a></td>
+                            <td><a href="http://www.instagram.com/soulcodeacademy"><img src="img/instagram.png" width= "30px" alt="ícone instagram"></a></td>
+                            <td><a href="https://twitter.com/SoulCodeAcademy"><img src="img/twitter.png" width= "30px" alt="ícone twitter"></a></td>
+                            <td><a href="https://www.youtube.com/channel/UCi6cfCiO5WyzTU58s-6geag"><img src="img/youtube.png" width= "30px" alt="ícone youtube"></a></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td align="center"><!--coluna 2-->
+                    <img src="img/logo-branco.png" alt="logotipo soulcode" width="200px" >
+                </td>
+
+                <td align="center"><!--coluna 3-->
+                    Rua Helena, 235 Conj 111, 11º andar <br />
+                    Vila Olímpia - São Paulo/SP 
+                </td>
+            </tr>
+
+        </table>
+        <p class="copyright">Copyright © 2021 SoulCode Academy. All rights reserved.</p> 
+       
+    </footer>
+</body>    
+
+</html>

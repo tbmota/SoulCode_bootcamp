@@ -1,0 +1,40 @@
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+    font-family: roboto;
+    font-weight: bolder;
+    height: 80px;
+    padding-top: 25px;
+    align-content: center;
+    line-height: 2.0em;
+    background-image: linear-gradient(to right,white, rgb(214, 214, 200));
+
+
+} 
+#redes a{
+    padding-left: 30px;
+    justify-content: space-around;
+}
+#redes img {
+    width: 32px;
+}
+#texto{
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+}
+#links a{
+    white-space: pre;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 200;
+}

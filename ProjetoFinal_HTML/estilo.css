@@ -1,0 +1,161 @@
+/*CSS DO MENU*/
+.menu{ /*usa o ponto para estilizar a class MENU*/
+    list-style:none; /*tira as bolinhas*/           
+    font-family: Helvetica;
+    font-size: large;
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.menu li{ /*coloca o menu horizontal*/
+    position:relative;   
+    float:left;
+}
+
+.menu li a{ /*espaçamento e cor dos itens com link*/
+    color:#000000; 
+    text-decoration:none; /*tira o sublinhado*/
+    padding: 20px; /*espaçamento entre os itens*/
+    display:block; /*mexe no dropdown menu*/
+}
+
+.menu li a:hover{ /*o que acontece quando passa o mouse no menu*/
+    background:#ffffff;
+    color:#3cb4c4;  
+}
+
+.menu li ul{ /*onde tiver um item com mais de uma lista dentro eu vou esconder*/
+    position:absolute;    
+    top:40px; /*distancia do submenu em altura*/   
+    left:10px;  /*distancia do submenu pra esquerda*/     
+    background-color:#ffffff;    
+    display:none;    
+    text-align: left;
+    padding: 10px;
+}
+
+.menu li:hover ul, .menu li.over ul{ /*onde eu tiver o menu escondido, e eu passar o mouse, eu vou mostrar*/
+    display:block;
+    padding-inline-start: 0;
+    font-size: medium;  
+}
+
+.menu li ul li{
+    /*border:1px solid #df2424;  se eu quiser colocar borda no submenu*/ 
+    display:block;    
+    width:350px;
+    height: 40px;  
+    margin-bottom: 10px;
+} 
+
+/*CS DO FOOTER*/
+.rodape{
+    color: white;
+    font-family: Helvetica;
+    text-decoration:none;
+    list-style:none;
+}
+
+.copyright{
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: smaller;
+    text-align: center;
+}
+
+/*CS DO FORMULARIO*/
+.formulario{
+    font-family: Helvetica;
+    margin-bottom: 200px;
+}
+
+/*CSS DA EQUIPE*/
+main{ /*bruna, troquei esse pra poder mudar so as partes no meio da pagina, sem interferir no menu e rodape (era body)*/
+    font-family: Helvetica;
+    background-color: white;
+    color: black;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: justify;
+    text-indent: 25px;
+}
+.img{
+    font-family: monospace;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    margin-top: -370px;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 30px;
+}
+.titulo{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 40px;
+}
+.aline{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 10px;
+}
+.bruna{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 10px;
+}
+.ive{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 10px;
+}
+.luiza{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 10px;
+}
+.natalia{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 10px;
+}
+.tamires{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 10px;
+}
+
+/*CSS CURSOS*/
+.descrição{
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: 30px;
+}
+.desenvolver{
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 30px;
+}
+.requisitos{
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 30px;
+}
+.horas{
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 30px;
+}
+
+
+/*cores soulcode
+azul #3cb4c4
+amarelo #f8c100
+*/
+

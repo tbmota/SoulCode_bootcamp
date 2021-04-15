@@ -1,0 +1,67 @@
+#banner{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    background-color:rgb(219, 219, 219);  
+}
+#banner img{
+    position: sticky;
+    top: 0;
+    width:100%;
+    opacity: 0.5;
+}
+
+#banner p{
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0px 40px 10px 40px;
+    color: rgb(41, 41, 41); 
+    line-height: 1.3em;
+    text-indent: 30px;
+    letter-spacing: 1px;
+}
+
+#missao{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color:rgb(219, 219, 219); 
+    margin: 10px 0;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: "monospace";
+    font-variant: small-caps;
+    font-size: 2em;
+    color: #2d6a4f;  
+}
+
+p{
+    text-align: center;
+    color: rgb(41, 41, 41);
+    line-height: 1.3em;
+    margin: 10px 40px;
+    font-size: 1.3em;
+    text-indent: 30px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+#visao{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color:rgb(219, 219, 219); 
+}
+
+#especializacoes{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color:rgb(219, 219, 219); 
+}
