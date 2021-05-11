@@ -41,4 +41,4 @@ Efeito de Fade(obrigatoriamente) , Efeito de Slide (Obrigatoriamente), Efeito de
 
 Jquery Ui: Utilizar ao menos 3 aplicações (accordion sendo obrigatório) e comentar no código qual está sendo utilizado 
 
-Desenvolvedoras: / https://github.com/naylamota / https://github.com/tbmota
+Desenvolvedoras: / https://github.com/danielabuarque / https://github.com/IveMiranda / https://github.com/naylamota / https://github.com/tbmota / https://github.com/Tulanics /
