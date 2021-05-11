@@ -1,0 +1,280 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    font-size: 20px;
+}
+/* banner-------------------------------------------------- */
+.banner{
+    background-image: url(img/banner2..jpg);
+    background-size: cover;
+    height: 260px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* relevantes------------------------------------------------------- */
+.relevantes{
+    background-color: rgba(255, 255, 255, 0.96);
+    display: flex;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: -25px;
+    padding-top: 20px;
+    width: 80%;
+}
+.conforto, .culturas, .impacto{
+    float: left;
+    height: 450px;
+    padding: 20px;
+    width: 33%;
+}
+.imgRelevantes{
+    margin: 20px;
+    width: 50%;
+}
+
+/*separador------------------------------------------------------- */
+.separador{
+    background-color: rgba(255, 255, 255, 0.96);
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* sobre nos------------------------------------------------ */
+.sobreNos{
+    background-color: rgba(255, 255, 255, 0.96);
+    display: flex;
+    height: 1000px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Sobre nós - lado esquerdo--------------------------------- */
+.sobreNosLeft{
+    background-color: #fae9b6;
+    border-radius: 15px;
+    float: left;
+    height: 850px;
+    padding: 20px;
+    margin: 60px 20px 0px 30px;
+    width: 50%;
+}
+
+/* lado esquerdo - div de cada integrante da equipe---------- */
+.angela{
+    border-bottom: 1px solid #FFD65B ;
+    display: flex;
+    float: left;
+    height: 90px;
+    padding-bottom: 60px;
+    margin: 20px 0px 0px 20px;
+    z-index: 1;
+    width: 100%;
+}
+.ana{
+    border-bottom: 1px solid #FFD65B  ;
+    display: flex;
+    float: right;
+    height: 90px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    z-index: 2;
+    width: 100%;
+}
+.nayla{
+    border-bottom: 1px solid #FFD65B ;
+    display: flex;
+    float: left;
+    height: 90px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    z-index: 3;
+    width: 100%;
+}
+.talita{
+    border-bottom: 1px solid #FFD65B ;
+    display: flex;
+    float: right;
+    height: 90px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    z-index: 4;
+    width: 100%;
+}
+.thammyrys{
+    display: flex;
+    float: left;
+    height: 90px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    z-index: 5;
+    width: 100%;
+}
+
+/* lado esquerdo - Padronização da foto de cada integrante da equipe */
+.imgEquipeLeft{
+    border-radius: 100%;
+    box-shadow: 3px 3px 7px #5e4b14;
+    float: left;
+    height: 140px;
+    margin-right: 8px;
+}
+.imgEquipeRight{
+    border-radius: 100%;
+    box-shadow: 3px 3px 7px #5e4b14;
+    float: right;
+    height: 140px;
+    margin-right: 8px;
+}
+
+/* lado esquerdo - Padronização dos texto de cada integrante da equipe */
+.imgTextLeft{
+    float: left;
+    height: 90px;
+}
+.imgTextRight{
+    float: right;
+    height: 90px;
+}
+.nameEquipe{
+    color: #caaa4a;
+}
+
+/* Sobre nós - lado direito------------------------------------------ */
+.sobreNosRight{
+    border-radius: 15px;
+    float: left;
+    height: 850px;
+    line-height: 1.4;
+    margin: 20px 20px 0px 30px;
+    padding: 20px;
+    width: 50%;
+}
+.sobreNosRight h2{
+    color: #FFD65B;
+    font-size: 35px;
+    font-weight:bolder;
+    padding: 20px;
+    text-shadow: 2px 2px 3px rgb(94, 91, 91);
+
+}
+#paisBrasil, #paisElSalvador, #paisArgentina, #paisCanada, #paisPortugal, #paisInglaterra,#paisArgentina, #padrao{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 7px 15px 7px 15px;
+}   
+#padrao{
+    background-color: #7e7762;
+}
+#paisBrasil{
+    background-image: linear-gradient(rgb(241, 238, 7) 60%, rgb(22, 94, 16));
+} 
+#paisElSalvador{
+    background-image: linear-gradient(rgb(63, 33, 235) 60%, rgb(255, 255, 255));
+}
+#paisInglaterra{
+    background-image: linear-gradient(rgb(12, 41, 136) 60%, red, white);
+}
+#paisArgentina{
+    background-image: linear-gradient(rgb(133, 207, 241) 60%, white);
+}
+#paisCanada{
+    background-image: linear-gradient(rgb(228, 5, 5) 60%, rgb(255, 251, 251));
+} 
+#paisPortugal{
+    background-image: linear-gradient(rgb(241, 15, 7) 60%, rgb(22, 94, 16));
+}
+
+/* participação------------------------------------------------------- */
+.participacao{
+    background-color: #fcf7e8;
+    clear: both;
+    height: 400px;
+    padding: 5% 0% 5% 0%;
+    width: 100%;
+}
+.participacao h2{
+    font-size: 30px;
+    padding: 20px;
+}
+.participacao h3{
+    font-size: 20px;
+    padding: 10px 0px 20px 0px;
+}
+.parText{
+    width: 100%;
+}
+.parIcons{
+    display: flex;
+    margin-bottom: 70px;
+    width: 100%;
+}
+.icon{
+    float: left;
+    height: 70px;
+    width: 100%;
+}
+.iconText{
+    color: grey;
+}
+.imgIcon{
+    height: 100%;
+}
+.lineTemp{
+    height: 20px;
+    width: 100%;
+}
+.posicao{
+    border-radius: 3px;
+    padding: 10px 0px 20px 0px;;
+    width: 95%;
+}
+#display{
+    background-color: #FFD65B;
+    border: none;
+    border-radius: 80%;
+    font-style: strong;
+    font-size: 40px;
+}
+.iconText{
+    font-size: 16px;
+}
+
+/* video------------------------------------------------------- */
+.video{
+    background-color: #fae9b6;
+    padding: 5%;
+}
+.video h2{
+    margin-bottom: 2%;
+}
+
+ /* acessibilidade */
+ .acess{
+    all: unset;
+    border-radius: 40%;
+    cursor: pointer;
+    outline: revert;
+    margin-left: 40%;
+    position: fixed;
+    top: 65%;
+    width: 10%;
+ }
+ .acess2{
+    all: unset;
+    cursor: pointer;
+    outline: revert;
+    margin-left: 43%;
+    position: fixed;
+    top: 60%;
+    width: 4%;
+ }

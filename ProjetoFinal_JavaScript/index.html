@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercâmbio TANTA'S</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho ----------------------------------------------------------------------->
+    <header> 
+        <div class="logo">
+            <img src="img/coracao1-removebg-preview.png" alt="avião de papel" style="width: 300px;">
+        </div>
+        <div>
+            <h1 class="titulo">Intercâmbio TANTA'S</h1>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calc.html">Calculadora</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="conversor.html">Conversão</a></li>
+            </ul>
+        </div>
+        <div class="logo2">
+            <img src="img/coracao1-removebg-preview.png" alt="avião de papel" style="width: 300px;">
+        </div>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Buscar">
+            <button type="submit" id="button-header">Ok</button>
+        </div>
+    </header>
+    <!-- banner -------------------------------------------------------------------------->
+    <section class="banner"></section>
+    <!-- acessibilidade------------------------------------------------------------------->
+    <button>
+        <img src="img/zoom2.gif" alt="aumenta a fonte" class="acess" onclick="acessibily()">
+    </button>
+    <button>
+        <img src="img/voltar.png" alt="voltar" class="acess2" id="decrease-font" onclick="voltar()">
+    </button>
+    <main>
+    <!-- Relevantes -------------------------------------------------------------------------->
+        <section class="relevantes">
+            <div class="conforto">
+                <img src="img/conforto.png" alt="Conforto" class="imgRelevantes">
+                <h3>SAIA DA SUA ZONA DE CONFORTO</h3>
+                <p>Experimente novas experiências e encontre seu potencial. Desafie-se e descubra a melhor versão de você.</p>
+            </div>
+            <div class="culturas">
+                <img src="img/cultura.png" alt="Cultura" class="imgRelevantes">
+                <h3>VIVA NOVAS CULTURAS</h3>
+                <p>More 6 semanas em outro país com uma host family e sendo voluntário com pessoas de várias partes do mundo!</p>
+            </div>
+            <div class="impacto">
+                <img src="img/impacto.png" alt="Impacto" class="imgRelevantes">
+                <h3>SEJA IMPACTO</h3>
+                <p>Você pode fazer a diferença no mundo! Contribua para os Objetivos de Desenvolvimento Sustentável da ONU e lide com as questões pelas quais você mais se identifica.</p>
+            </div>
+        </section>
+    <!-- Separador------------------------------------------------------------------------>
+        <section class="separador">
+            <img src="img/separador.JPG" alt="Separador">
+        </section>
+    <!-- Sobre nós------------------------------------------------------------------------>
+        <section class="sobreNos">
+            <section class=sobreNosLeft>
+                <h3 >Fundadoras</h3>
+               <div class="angela">
+                    <img src="img/angela.jpg" alt="Ângela Tsuramaki" class="imgEquipeLeft">
+                    <div class="imgTextLeft">
+                        <h3 class="nameEquipe">Angela Tsurumaki</h3>
+                        <p class="upperCase">"<em>Sempre me preocupei com o próximo e não seria diferente nessa pandemia.</em>"</p>
+                    </div>
+               </div>
+               <div class="ana">
+                    <div class="imgTextRight">
+                        <h3 class="nameEquipe">Ana Caroline</h3>
+                        <p>"<em>Aprendi com meus avós a importância do coletivo, o intercâmbio é um sonho realizado.</em>"</p>
+                   </div>
+                   <img src="img/ana.jpg" alt="Ana Carolina" class="imgEquipeRight">
+               </div>
+               <div class="nayla">
+                   <img src="img/nayla.jpg" alt="Nayla Mota" class="imgEquipeLeft">
+                   <div class="imgTextLeft">
+                        <h3 class="nameEquipe">Nayla Mota</h3>
+                        <p>"<em>É gratificante ver o coletivo acontecendo, vivo essa experiência desde pequena.</em>"</p>
+                   </div>
+               </div>
+               <div class="talita">
+                   <div class="imgTextRight">
+                        <h3 class="nameEquipe">Talita Fernandes</h3>
+                        <p>"<em>Nasci em uma família que sempre recebeu apoio, agora, chegou a minha vez de retribuir.</em>"</p>
+                   </div>
+                   <img src="img/talita.JPG" alt="Talita Fernandes" class="imgEquipeRight">
+               </div>
+               <div class="thammyrys">
+                   <img src="img/thammyrys.jpg" alt="Thammyrys Barbosa" class="imgEquipeLeft">
+                   <div class="imgTextLeft">
+                        <h3 class="nameEquipe">Thammyrys Barbosa</h3>
+                        <p>"<em>O pouco que fazemos tem um impacto tão grande, que é impossível não desejar isso.</em>"</p>
+                   </div>
+               </div>
+            </section>
+            <section class=sobreNosRight>
+                <h2>SOBRE O PROGRAMA</h2>
+                <p>
+                    O <em>Intercâmbio TANTA'S</em> nasceu em 2020, devido a pandemia da Covid-19, para conectar voluntários a quem necessita de ajuda neste momento.<br><br>
+                    
+                    Dedicamos esse site a realização do pré-cadastro e planejamento financeiro do voluntário, onde disponibilizamos conversor de moedas, calculadora científica e nosso apoio durante o processo.<br><br>
+
+                    Como forma de agradecimento, pensamos em deixar o site com a carinho do país que deseja ajudar...clique👇🏼<br><br>
+
+                    <button onclick="brasil()" id="paisBrasil">Brasil</button>
+                    <button onclick="elSalvador()" id="paisElSalvador">El Salvador</button>
+                    <button onclick="canada()" id="paisCanada">Canadá</button><br>
+                    <button onclick="portugal()" id="paisPortugal">Portugal</button>
+                    <button onclick="inglaterra()" id="paisInglaterra">Inglaterra</button>
+                    <button onclick="argentina()" id="paisArgentina">Argentina</button><br>
+                    <button onclick="padrao()" id="padrao">Padrão</button>
+            </section>
+        </section>
+    <!-- Participação -------------------------------------------------------------------->
+        <section class="participacao">
+            <div class="parText">
+                <h2>Quero participar, e agora?</h2>
+                <h3>Confira as etapas do nosso processo</h3>
+            </div>
+            <div class="parIcons">
+                <div class="icon"> <img src="img/cadastro.png" alt="Cadastro" class="imgIcon">
+                    <h5 class="iconText">Cadastrar-se</h5>
+                </div>
+                <div class="icon"> <img src="img/contato.png" alt="Contato" class="imgIcon">
+                    <h5 class="iconText">Aguardar nosso contato</h5>
+                </div>
+                <div class="icon"> <img src="img/candidato.png" alt="Candidate-se" class="imgIcon">
+                    <h5 class="iconText">Candidatar-se na vaga de interesse</h5>
+                </div>
+                <div class="icon"> <img src="img/like.png" alt="Aprovado" class="imgIcon">
+                    <h5 class="iconText">Ser aprovado</h5>
+                </div>
+                <div class="icon"> <img src="img/intercambio.png" alt="Intercâmbio" class="imgIcon">
+                    <h5 class="iconText">Preparação para o intercâmbio</h5>
+                </div>
+                <div class="icon"> <img src="img/viva.png" alt="Viva" class="imgIcon">
+                    <h5 class="iconText">Viajar e viver essa esperiência</h5>
+                </div>
+            </div>
+            <div class="lineTemp">
+                <form>
+                    <input type="range" value="0" min="0" max="6" class="posicao" oninput="display.value=value" onchange="display.value=value">
+                    <input type="text" id="display" value="0" readonly size="2">
+                </form>
+            </div>
+        </section>
+    <!-- Vídeos -------------------------------------------------------------------->
+        <section class="video">
+            <h2>Acesse nossas redes sociais e veja seu futuro com a gente!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h2y1GE6Q3bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/djQfKoh0RVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+    </main>
+    <!--Footer---------------------------------------------------------------------------------->
+    <footer> 
+        <div class="logo">
+            <img src="img/coracao2-removebg-preview.png" alt="avião com coração" style="width: 250px;">
+        </div>
+        <div >
+            <ul class="menu-footer">
+                    <li><a href="index.html" target="_blank">Conheça Nosso Programa</a></li>
+                    <li><a href="#topo" target="_blank">Fale Conosco</a></li>
+                    <li><a href="index.html" target="_blank">Quem Somos</a></li>
+                    <li><a href="https://m.facebook.com/SoulCodeAcademy/" target="_blank"><img class= "icone" src="img/facebook.png" ></a></li>
+                    <li><a href="https://instagram.com/soulcodeacademy?igshid=xak38yumb5k5" target="_blank"><img class= "icone" src="img/instagram.png" ></a></li>
+                    <li><a href="https://twitter.com/SoulCodeAcademy" target="_blank"><img class= "icone" src="img/twitter.png" ></a></li>
+            </ul>
+        </div>
+        <div class="logo3">
+            <img src="img/coracao2-removebg-preview.png" alt="avião com coração" style="width: 250px;">
+        </div>
+    </footer>
+</body>
+<!-- 
+Ângela Tsuramaki - criação da página de formulário.
+Ana Carolina - criação do header e footer das páginas. 
+Nayla Mota - criação da página da calculadora.
+Talita Fernandes - criação da index.
+Thammyrys Barbosa - criação do conversor.
+-->
+</html>

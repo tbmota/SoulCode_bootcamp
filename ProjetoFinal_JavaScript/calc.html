@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">  
+    <script src="calc.js.js"> </script>
+    
+</head>
+
+<body>
+    <!--Inicio do header-->
+    <header> 
+        <div class="logo">
+            <img src="img/coracao1-removebg-preview.png" alt="avião de papel" style="width: 300px;">
+        </div>
+        <div>
+            <h1 class="titulo">Intercâmbio TANTA'S</h1>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calc.html">Calculadora</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="conversor.html">Conversão</a></li>
+            </ul>
+        </div>
+        <div class="logo2">
+            <img src="img/coracao1-removebg-preview.png" alt="avião de papel" style="width: 300px;">
+        </div>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Buscar">
+            <button type="submit" id="button-header">Ok</button>
+        </div>
+
+    </header>
+        <div id="texto"> 
+    <!--Fim do Header-->
+        <h2>
+           Disponibilizamos este recurso para te auxiliar nos cálculos do Intercâmbio, afinal, é bastante tempo longe de casa que demanda um planejamento financeiro antecipado, para que tudo ocorra da melhor forma possível. 
+
+           Em nossas redes sociais, você tem acesso a vídeos de cunho explicativo, sobre como se planejar para este momento, além de dicas de como lidar com imprevistos.
+           
+         </h2>
+        </div>
+         <select> <!--seleciona qual calculadora usar-->
+            <option value="Use as duas calculadoras" onclick="habilita3()">Use as duas calculadoras</option>
+            <option value="Calculadora simples" onclick="habilita1()"/>Calculadora simples</option>
+            <option value="Calculadora científica" onclick="habilita2()"/>Calculadora científica</option>
+        </select>
+        <div id="paragrid">
+            <!-- os números -->
+            <div id="primeira" > 
+            <h3> Calculadora Simples</h3>
+            <form name="calc1">  
+                <input type="text" name="visor1" id= "tela1" /> <br/>
+                <input type="button" value="7"/  onclick="escolha1(value)">
+                <input type="button" value="8"/  onclick="escolha1(value)">
+                <input type="button" value="9"/  onclick="escolha1(value)">
+                <input type="button" value="/"/  onclick="escolha1(value)">  <!--o JS entende que esse é o cálculo-->
+                <br/>
+
+
+                <input type="button" value="4"/  onclick="escolha1(value)">
+                <input type="button" value="5"/  onclick="escolha1(value)">
+                <input type="button" value="6"/  onclick="escolha1(value)">
+                <input type="button" value="*"/  onclick="escolha1(value)">
+                <br/>
+
+
+                <input type="button" value="1"/  onclick="escolha1(value)">
+                <input type="button" value="2"/  onclick="escolha1(value)">
+                <input type="button" value="3"/  onclick="escolha1(value)">
+                <input type="button" value="-"/  onclick="escolha1(value)">
+                <br/>
+
+
+                <input type="button" value="0"/  onclick="escolha1(value)">
+                <input type="button" value="="/  onclick="calcular1()" id= "resultado">
+                <input type="button" value="C"/  onclick="reset()">
+                <input type="button" value="+"/ onclick="escolha1(value)">
+                <br/>
+            </form> 
+        </div>
+        <!-- calculadora científica -->
+
+        <div id="segunda" >
+            <h3> Calculadora Científica </h3>
+            <form name="calc2">
+                <input type="text" name="visor2" id="tela2"/> <br/>
+                <input type="button" value="7"/  onclick="escolha2(value)">
+                <input type="button" value="8"/  onclick="escolha2(value)">
+                <input type="button" value="9"/  onclick="escolha2(value)">
+                <input type="button" value="/"/  onclick="escolha2(value)">
+                <input type="button" value="√"/  onclick="raiz(value)">
+                <br/>
+
+
+                <input type="button" value="4"/  onclick="escolha2(value)">
+                <input type="button" value="5"/  onclick="escolha2(value)">
+                <input type="button" value="6"/  onclick="escolha2(value)">
+                <input type="button" value="*"/  onclick="escolha2(value)">
+                <input type="button" value="²"/  onclick="elevado2(value)">
+                <br/>
+
+
+                <input type="button" value="1"/  onclick="escolha2(value)">
+                <input type="button" value="2"/  onclick="escolha2(value)">
+                <input type="button" value="3"/  onclick="escolha2(value)">
+                <input type="button" value="-"/  onclick="escolha2(value)">
+                <input type="button" value="³"/  onclick="elevado3(value)">
+                <br/>
+
+
+                <input type="button" value="0"/  onclick="escolha2(value)">
+                <input type="button" value="="/  onclick="calcular2();">
+                <!-- <input type="button" value="C"/  onclick="limpar()"> -->
+                <input type="button" value="C"/  onclick="reset()">
+                <input type="button" value="+"/  onclick="escolha2(value)">
+                <input type="button" value="π"/ id="simboloPi" onclick="numPi2(value)">
+                <br/>
+
+            </form>
+        </div>
+
+    </div>
+
+<!--Inicio Footer-->
+<footer> 
+    <div class="logo">
+        <img src="img/coracao2-removebg-preview.png" alt="avião com coração" style="width: 250px;">
+    </div>
+    <div >
+        <ul class="menu-footer">
+                <li><a href="index.html" target="_blank">Conheça Nosso Programa</a></li>
+                <li><a href="#topo" target="_blank">Fale Conosco</a></li>
+                <li><a href="index.html" target="_blank">Quem Somos</a></li>
+                <li><a href="https://m.facebook.com/SoulCodeAcademy/" target="_blank"><img class= "icone" src="img/facebook.png" ></a></li>
+                <li><a href="https://instagram.com/soulcodeacademy?igshid=xak38yumb5k5" target="_blank"><img class= "icone" src="img/instagram.png" ></a></li>
+                <li><a href="https://twitter.com/SoulCodeAcademy" target="_blank"><img class= "icone" src="img/twitter.png" ></a></li>
+        </ul>
+    </div>
+    
+    <div class="logo3">
+        <img src="img/coracao2-removebg-preview.png" alt="avião com coração" style="width: 250px;">
+    </div>
+</footer>
+<!--Fim Footer-->
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="cadastro.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Inicio do header-->
+        <header> 
+            <div class="logo">
+                <img src="img/coracao1-removebg-preview.png" alt="avião de papel" style="width: 300px;">
+            </div>
+            <div>
+                <h1 class="titulo">Intercâmbio TANTA-S</h1>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calc.html">Calculadora</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="conversor.html">Conversão</a></li>
+                </ul>
+            </div>
+            <div class="logo2">
+                <img src="img/coracao1-removebg-preview.png" alt="avião de papel" style="width: 300px;">
+            </div>
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Buscar">
+                <button type="submit" id="button-header">Ok</button>
+            </div>
+
+        </header>
+        <!--Fim do Header-->
+        <!--Form-->
+        <main>
+            <p>Estamos muito felizes de você ter chegado até aqui, seu apoio é muito importante nesse momento tão delicado! Para fazer parte da equipe, pedimos inicialmente que preencha o cadastro abaixo. Na sequência, entraremos em contato para um bate-papo muito legal, e, depois, o processo seguirá os passos listados na página inicial que são, respectivamente, seu cadastro na vaga de interesse, sua aprovação nesta vaga, a preparação para o Intercâmbio e, por fim, você viver essa experiência. Vamos lá!!</p>
+            <form action="">  
+                    <input type="text" name="nome" id="nome" placeholder=" Nome completo" onblur="converteMaiusc(this)" required>   <!--onblur quando clica fora do input que estava digitando!-->
+
+                    <input type="text" name="cpf" id="cpf" placeholder=" CPF: xxx.xxx.xxx-xx" onblur="VerificaCPF(this)" required>  <!--onblur ocorre quando O evento onblur ocorre quando um objeto perde o foco.!-->
+                    <input type="date" name="nascimento" id="nascimento" placeholder=" Data de nascimento: xx/xx/xxxx" onblur="validaData(this)" required> <!--usa a informação que está no email, clica fora que ativa a função-->
+                    <input type="email" name="email" id="email" placeholder=" Email" onblur="validaEmail(this)" required>
+                    <select name="sexo" id="sexo">
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="não_informado">Não informado</option>
+                    </select> 
+
+                    <!-- Define a opção escolhida para sexo.  -->
+                    <script>
+                            var select = document.getElementById('sexo');  //caixa que seleciona, tipo button
+                    </script>
+
+                    <input type="button" value="Enviar" onclick="mostraCadastro()"> <!--texto que aparece no final-->
+                    <div id="cadastro"></div>    
+            </form>
+        </main>
+        <!--FIM DO Form-->
+        <!--Inicio Footer-->
+        <footer> 
+                <div class="logo">
+                    <img src="img/coracao2-removebg-preview.png" alt="avião com coração" style="width: 250px;">
+                </div>
+                <div >
+                    <ul class="menu-footer">
+                            <li><a href="index.html" target="_blank">Conheça Nosso Programa</a></li>
+                            <li><a href="#topo" target="_blank">Fale Conosco</a></li>
+                            <li><a href="index.html" target="_blank">Quem Somos</a></li>
+                            <li><a href="https://m.facebook.com/SoulCodeAcademy/" target="_blank"><img class= "icone" src="img/facebook.png" ></a></li>
+                            <li><a href="https://instagram.com/soulcodeacademy?igshid=xak38yumb5k5" target="_blank"><img class= "icone" src="img/instagram.png" ></a></li>
+                            <li><a href="https://twitter.com/SoulCodeAcademy" target="_blank"><img class= "icone" src="img/twitter.png" ></a></li>
+                    </ul>
+                </div>
+                
+                <div class="logo3">
+                    <img src="img/coracao2-removebg-preview.png" alt="avião com coração" style="width: 250px;">
+                </div>
+        </footer>
+        <!--Fim Footer-->
+        <script>
+            //Converte o nome completo para letras maiúsculas.
+        function converteMaiusc(nome){  //quando faço o onblur ativa aqui
+          /*  while(!isNaN(nome)){
+                alteraCorCampo(x);  // passo o parâmetro pra função funcionar, recebe o x e uso novamente pra algo
+                apagaValue(x);
+            }*/
+            nome.value = document.getElementById("nome").value.toUpperCase();
+        }
+
+        // Se o valor do input for inválido, qd a pessoa clicar fora do input, as bordas ficam vermelhas.
+        function alteraCorCampo(x){  //recebe o param,etro e passa pro valor da id, como usei em vários coloquei o x pra chamar em outros locais, quando altero embaixo o valor vem para cá
+            document.getElementById(x).style.border = "red solid 1px";
+        }
+
+        // Se o valor do input for inválido, qd a pessoa clicar fora do input, o que foi digitado no input é apagado e volta a aparecer o placeholder.
+        function apagaValue(x){
+            document.getElementById(x).value = "";
+        }
+
+        //Validação do cpf: (este código foi passado pela Sayure).
+        function VerificaCPF() {
+            strCpf = document.getElementById('cpf').value;
+            var soma = 0;
+            var resto;  
+        //Se todos os valores forem 0 ou se for digitado mais que 11 números, o input é inválido (bordas ficam vermelhas e apaga o que foi digitado).
+            if (strCpf == "00000000000" || strCpf.length != 11) {
+                alteraCorCampo("cpf");
+                apagaValue("cpf");
+                return false;
+            }
+            
+            for (i = 1; i <= 9; i++) {
+                soma = soma + parseInt(strCpf.substring(i - 1, i)) * (11 - i);
+            }
+            
+            resto = soma % 11;
+            if (resto == 10 || resto == 11 || resto < 2) {
+                resto = 0;
+            } else {
+                resto = 11 - resto;
+            }
+            
+            if (resto != parseInt(strCpf.substring(9, 10))) {
+                alteraCorCampo("cpf");
+                apagaValue("cpf");
+                return false;
+            }
+            
+            soma = 0;            
+            for (i = 1; i <= 10; i++) {
+                soma = soma + parseInt(strCpf.substring(i - 1, i)) * (12 - i);
+            }
+            
+            resto = soma % 11;            
+            if (resto == 10 || resto == 11 || resto < 2) {
+                resto = 0;
+            } else {
+                resto = 11 - resto;
+            }
+        }
+        // Até aqui não precisa estudar.
+        
+        //Validação da data de nascimento.
+        function validaData(){
+            //Define a data de hoje. Extrai as informações do Date() - data de nascimento.
+            var hoje = new Date(); //objeto
+            hoje.ano = hoje.getFullYear();  //objeto.atributo
+            hoje.mes = hoje.getMonth() + 1;
+            hoje.dia = hoje.getDate();
+            console.log(hoje);
+        //Define a data de nascimento digitada. Extrai as informações do Date() - data de nascimento.
+            nascimento = document.getElementById("nascimento").value;
+            data = new Date(nascimento); 
+            data.ano = data.getFullYear();
+            data.mes = data.getMonth();
+            data.dia = data.getDate() + 1;
+            console.log(data);
+            
+        //Define a idade.
+            idade = hoje.ano - data.ano;
+            console.log(idade)
+            if(idade > 130 || idade <=0){
+                alteraCorCampo("nascimento");
+                apagaValue("nascimento");
+            }
+
+        // Verifica o mês para confirmar a idade.
+            diferençaAnos = hoje.mes - data.mes;  //caso pegue esse ano e ainda não passou o aniversário
+            if(diferençaAnos < 0 || (diferençaAnos === 0 && hoje.dia < data.dia)){  //=== idêntico tipo e valor
+                idade--  //se não completou o ano diminui um na idade
+            }
+            console.log(diferençaAnos);
+            console.log(idade);
+        }
+
+        // Validação do email. (Esta parte foi passada pela Sayure).
+        function validaEmail(field) {
+            usuario = field.value.substring(0, field.value.indexOf("@"));
+            dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+            if ((usuario.length >=1) &&
+                (dominio.length >=3) &&
+                (usuario.search("@")==-1) &&
+                (dominio.search("@")==-1) &&
+                (usuario.search(" ")==-1) &&
+                (dominio.search(" ")==-1) &&
+                (dominio.search(".")!=-1) &&
+                (dominio.indexOf(".") >=1)&&
+                (dominio.lastIndexOf(".") < dominio.length - 1)) {         
+            }
+            else{
+                alteraCorCampo("email");
+                apagaValue("email");
+            } 
+        }
+        // Não precisa estudar até aqui.
+
+        //Quando o botão é clicado, mostra as informações do cadastro.
+        function mostraCadastro(){
+            document.getElementById("cadastro").innerHTML = "Olá " + nome.value + ", seu login é " + email.value + ", você tem " + idade + " anos, se define como uma pessoa do sexo " + select.value + " e pode usar o CPF: " + cpf.value + " como senha.";            
+        }
+        </script>
+    </body>
+</html>

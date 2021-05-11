@@ -18,4 +18,4 @@ Seguem alguns requisitos que deverão conter nas seções:
 • O projeto deverá conter no mínimo quatro(4) páginas (index , contato , quem somos , produtos/serviços) e não mais que 10(dez) páginas POR LAYOUT
 • No index deve ser inserido (comentário) no código o nome da equipe sendo 2 nomes dentro do <head> e os outros uma linha acima do fechamento </html>
 
-Desenvolvedoras: / https://github.com/FernandaMoura / https://github.com/HelenaDittert / https://github.com/naylamota / https://github.com/tbmota
+Desenvolvedoras: / https://github.com/FernandaMoura / https://github.com/HelenaDittert / https://github.com/luizagontijo / https://github.com/naylamota / https://github.com/tbmota

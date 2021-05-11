@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{ 
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2;
+    background-color: #FFD65B;
+}
+.logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+.titulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 15px;
+    color: white;
+    background-image: url('img/gif-heart-12.gif');
+    background-size: contain;
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#search {
+    color: rgb(63, 63, 63);
+    border: 1px solid #000;
+    height: 25px;
+    width: 200px;
+    background: rgba(254, 255, 250, 0.363);
+    padding: 2px 10px;
+
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3; 
+    margin-left: 2%;
+}
+
+.menu li {
+    float: left;
+    padding: 20px;
+    margin-top: 20px;
+    list-style: none;
+    font-size: 30px;
+}
+.menu li a{
+    color: rgb(5, 9, 17);
+    text-decoration: none;
+    margin-left: 20%;
+}
+.menu li a:hover {   
+    color:#fff;
+    text-shadow:0px 0px 5px #fff;
+}
+.logo2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+.search{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
+
+/* footer */
+
+footer{ 
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2;
+    background-color: #FFD65B;
+}
+.logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+.menu-footer{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 80px;
+    
+}
+.menu-footer li{
+    float: left;
+    padding: 20px;
+    margin-top: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+.menu-footer li a{
+    color: rgb(5, 9, 17);
+    text-decoration: none;
+}
+.icone{
+    width: 32px;
+}
+
+.logo3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+/* CSS do main */
+main{
+    border: 3px solid #dadada;
+    background-image: url("./img/backCadastroPreto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    font-family: "Montserrat", sans-serif;
+    height: 780px;
+    width: 100%;  
+    margin-bottom: -10px; 
+}
+main p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
+    line-height: 30px;
+    margin: 20px 0px 20px 70px;
+    text-align: justify;
+    text-shadow: white;
+    width: 50%;
+}
+#cadastro{
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
+    height: 400px;
+    line-height: 30px;
+    margin: 5px 20px;
+    margin-left: 100px;
+    width: 700px;
+}
+form{    
+    align-items: center;    
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    justify-content: center;
+    margin-left: 120px;
+    position: relative;
+    right: 400px;
+}
+
+input{
+    border: 1px solid ;
+    border-radius: 5px;
+    height: 30px;
+    margin: 15px;
+    width: 400px;
+}
+
+select{
+    border: 1px solid ;
+    border-radius: 5px;
+    height: 25px;
+    margin: 20px;
+    width: 404px;
+}

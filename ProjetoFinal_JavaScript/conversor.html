@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conversor.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">    <title>Conversão de Moedas</title>
+</head>
+<body>
+    <!--Inicio do header-->
+    <header> 
+        <div class="logo">
+            <img src="img/coracao1-removebg-preview.png" alt="avião de papel" style="width: 300px;">
+        </div>
+        <div>
+            <h1 class="titulo">Intercâmbio TANTA'S</h1>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calc.html">Calculadora</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="conversor.html">Conversão</a></li>
+            </ul>
+        </div>
+        <div class="logo2">
+            <img src="img/coracao1-removebg-preview.png" alt="avião de papel" style="width: 300px;">
+        </div>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Buscar">
+            <button type="submit" id="button-header">Ok</button>
+        </div>
+
+    </header>
+    <!--Fim do Header-->
+
+<!--INICIO ESPAÇO PARA INDEX-->
+    
+    <form> <!--Formulário Conversão de Moeda-->
+
+        <p id="text">Como trabalhamos atualmente em seis países diferentes, e, visando lhe ajudar no planejamento financeiro, criamos o <b>CONVERSOR DE MOEDAS DO BEM</b>. Nele, você consegue visualizar o quanto o dinheiro que você tem vale no país de destino. Bom né! É muito importante realizar esta conversão para evitar imprevistos indesejados. Aproveite este recurso, foi feito especialmente para você!</p>
+        
+        <h2>Conversor de Real (BRL) para outras moedas</h2>
+        <a href="#"></a>
+            
+        <main><!--container para usar no css-->
+            <div>
+                <label autofocus>Valor (BRL) R$:</label><br>
+                <input type="text" id="valor" required="" placeholder="0,00"></input> <!--valor atual a ser convertido, digitado pelo usuário!-->
+            </div>
+        
+            <div>
+                <label>Converter para:</label> <br>
+
+                <select id="moeda"> <!--select com moedas aceitas-->
+                    <option value = "USD">$ Dólar Americano (USD)</option>  <!--Coloquei value pra chamar ele depois usando só a sigla das moedas-->
+                    <option value = "CAD">$ Dólar Canadense (CAD)</option>
+                    <option value = "EUR">€ Euro (EUR)</option>
+                    <option value = "GBP">£󠁧󠁢󠁥󠁮 Libra Esterlina (GBP)</option>
+                    <option value = "ARS">$ Peso Argentino (ARS)</option>  
+                </select>
+            </div>
+
+            <div>
+                <input id="converter" type="button" value="converter ⇄" onClick="conversão()"></input><br>  <!--quando clico no botão converter o evento function conversão() acontece!-->
+                <input id="resetar" type="reset" value="resetar ↺"/>  <!--limpo o que está escrito-->
+            </div>
+    
+            <div>
+                <label id="res_conv">Resultado da Conversão:</label><br>
+                <label id="resultado"></label>  <!--m elemento HTML <label> representa uma legenda para um item em uma interface de ... Um input pode ser associado a diversas etiquetas (<label>s).-->
+            </div> 
+        </main>
+
+        <section id="section2">
+            <div id="sec2_div1">
+                <p>Mercado comercial considerado do dia: 26/04/2021</p><br><!--valores usados nas moedas e exibidos na página-->
+                <ul>
+                    <li>$1 Dólar Americano igual a R$5.44 Real brasileiro</li>
+                    <li>$1 Dólar Canadense igual a R$4.39 Real Brasileiro</li>
+                    <li>€1 Euro igual a R$6.57 Real Brasileiro</li>
+                    <li>£󠁧󠁢󠁥󠁮1 Libra Esterlina igual a R$7.55 Real Brasileiro</li>
+                    <li>$1 Peso Argentino igual a R$0.058 Real Brasileiro</li>
+                </ul><br>
+                <p id="p2">O cálculo efetuado tem caráter informativo e não substitui as disposições da norma cambial brasileira para casos específicos de conversão.</p>
+            </div>
+            <div id="sec2_div2">
+                <img src="img/monophy.gif" alt="avião de papel" style="width: 300px;">
+            </div>
+        </section>
+     
+        </section id="section3">
+            <div id="sec3_div1">
+                <h2>Destino de acordo com a moeda escolhida</h2>
+            </div>
+    
+            <div id = "el_salvador">
+                <h3></h3>
+                <img src="img/el_salvador.png" alt="El Salvador"> 
+                <p><b>El Salvador</b> é uma pequena nação da América Central, conhecida por suas praias no Oceano Pacífico, pelos pontos procurados para a prática de surfe e pela paisagem montanhosa. A Ruta de Las Flores é um caminho sinuoso que passa por fazendas de café, florestas com cachoeiras e cidades como Juayúa, com seu festival gastronômico nos fins de semana, e Ataco, que abriga vivos murais. A capital, San Salvador, com um cenário espetacular repleto de vulcões, tem vários museus e o Teatro Nacional.</p>
+                <a id="href" href="https://pt.wikipedia.org/wiki/El_Salvador" target="_blank">Saiba mais →</a> 
+                <a id="âncora" href="#">Converta para Dólar Americano</a>
+            </div>
+
+            <div id = "canadá">
+                <h3></h3>
+                <img src="img/canadá.jpg" alt="Canadá">
+                <p>O <b>Canadá </b> é um país norte-americano que se estende desde os EUA, no sul, até o Círculo Polar Ártico, no norte. Entre suas grandes cidades estão a gigantesca Toronto; Vancouver, centro cinematográfico da costa oeste; Montreal e Québec City, que falam francês; e a capital, Ottawa. As vastas regiões de natureza selvagem do Canadá compreendem o Parque Nacional de Banff, repleto de lagos nas Montanhas Rochosas. Abriga também as Cataratas do Niágara, um famoso conjunto de enormes cachoeiras.</p>
+                <a id="href" href="https://pt.wikipedia.org/wiki/Canad%C3%A1" target="_blank">Saiba mais →</a>
+                <a id="âncora" href="#">Converta para Dólar Canadense</a>
+            </div>
+    
+            <div id = "portugal">
+                <h3></h3>
+                <img src="img/portugal.jpg" alt="Portugal">
+                <p><b>Portugal</b> é um país no sul da Europa, localizado na Península Ibérica, que faz fronteira com a Espanha. Sua localização às margens do Oceano Atlântico influenciou muitos aspectos da cultura do país: o bacalhau salgado e as sardinhas assadas são pratos típicos nacionais, as praias do Algarve são destinos muito procurados e boa parte da arquitetura do país data dos séculos XVI a XIX, quando Portugal era um poderoso império marítimo.</p>
+                <a id="href" href="https://pt.wikipedia.org/wiki/Portugal" target="_blank">Saiba mais →</a>
+                <a id="âncora" href="#">Converta para Euro</a>
+            </div>
+
+            <div id = "inglaterra">
+                <h3></h3>
+                <img src="img/inglaterra.jpg" alt="Inglaterra">
+                <p>A <b>Inglaterra</b>, local de nascimento de Shakespeare e dos Beatles, é um país nas ilhas britânicas que faz fronteira com a Escócia e o País de Gales. A capital, Londres, situada às margens do rio Tâmisa, abriga o Parlamento, o Big Ben e a Torre de Londres, do século XI. A cidade é também um moderno centro multicultural de artes e negócios. Outras grandes cidades são Manchester, Birmingham, Liverpool, Bristol e os centros universitários de Oxford e Cambridge. </p>
+                <a id="href" href="https://pt.wikipedia.org/wiki/Inglaterra" target="_blank">Saiba mais →</a>
+                <a id="âncora" href="#">Converta para Libra Esterlina</a>
+            </div>
+            
+            <div id = "argentina">
+                <h3></h3>
+                <img src="img/argentina.jpg" alt="Argentina">
+                <p>A <b>Argentina</b> é um país da América do Sul com uma área extensa que abrange montanhas dos Andes, lagos glaciais e pradarias nos Pampas, ocupadas tradicionalmente por seu famoso gado. O país é conhecido também por sua dança e sua música, o tango. A capital cosmopolita, Buenos Aires, tem como centro a Praça de Maio, cercada por edifícios imponentes do século XIX, como a Casa Rosada, o emblemático palácio presidencial.</p>
+                <a id="href" href="https://pt.wikipedia.org/wiki/Argentina" target="_blank">Saiba mais →</a>
+                <a id="âncora" href="#">Converta para Peso Argentino</a>
+            </div>
+        </section>
+    </form>
+    
+    <script type="text/JavaScript">
+    
+        function conversão(){  //função
+    
+            var dólarAmericano = 5.44;
+            var dólarCanadense = 4.39;
+            var euro = 6.57;
+            var libraEsterlina = 7.55;
+            var pesoArgentino = 0.058;
+
+            var valor = parseFloat(document.getElementById("valor").value); //parseFloat converte em números reais, com casas decimais
+    
+            while (isNaN(valor)){ //quando valor is not a number
+                alert("Somente aceita números");
+                document.getElementById("valor").value = "";  //apaga o campo valor quando este não é número
+                break;          
+            }
+            while (valor < 0){ //quando valor is not a number
+                alert("Digite um valor positivo");  //aparece um alerta de que não é valor positivo mas realiza a conversão mesmo assim
+                valor = document.getElementById("valor").value;  
+                break; 
+            }
+            switch (document.getElementById("moeda").value) {
+                    
+                case (document.getElementById("moeda").value = "USD"):
+                document.getElementById("resultado").innerHTML = (valor / dólarAmericano).toFixed(2);  //obtém a sintaxe html e descreve o elemento
+                break; 
+                    
+                case (document.getElementById("moeda").value = "CAD"):
+                document.getElementById("resultado").innerHTML = (valor / dólarCanadense).toFixed(2);
+                break;
+    
+                case (document.getElementById("moeda").value = "EUR"):
+                document.getElementById("resultado").innerHTML = (valor / euro).toFixed(2);
+                break;
+                     
+                case (document.getElementById("moeda").value = "GBP"):
+                document.getElementById("resultado").innerHTML = (valor / libraEsterlina).toFixed(2);
+                break;
+    
+                case (document.getElementById("moeda").value = "ARS"):
+                document.getElementById("resultado").innerHTML = (valor / pesoArgentino).toFixed(2);
+                break;
+            }
+        }
+    </script>
+   
+<!--FIM DO ESPAÇO PARA INDEX-->
+
+
+<!--Inicio Footer-->
+    <footer> 
+        <div class="logo">
+            <img src="img/coracao2-removebg-preview.png" alt="avião com coração" style="width: 250px;">
+        </div>
+        <div >
+            <ul class="menu-footer">
+                    <li><a href="index.html" target="_blank">Conheça Nosso Programa</a></li>
+                    <li><a href="#topo" target="_blank">Fale Conosco</a></li>
+                    <li><a href="index.html" target="_blank">Quem Somos</a></li>
+                    <li><a href="https://m.facebook.com/SoulCodeAcademy/" target="_blank"><img class= "icone" src="img/facebook.png" ></a></li>
+                    <li><a href="https://instagram.com/soulcodeacademy?igshid=xak38yumb5k5" target="_blank"><img class= "icone" src="img/instagram.png" ></a></li>
+                    <li><a href="https://twitter.com/SoulCodeAcademy" target="_blank"><img class= "icone" src="img/twitter.png" ></a></li>
+            </ul>
+        </div>
+        
+        <div class="logo3">
+            <img src="img/coracao2-removebg-preview.png" alt="avião com coração" style="width: 250px;">
+        </div>
+    </footer>
+<!--Fim Footer-->
+</body>
+</html>
