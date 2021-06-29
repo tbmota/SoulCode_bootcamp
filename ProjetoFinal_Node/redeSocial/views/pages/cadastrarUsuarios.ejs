@@ -1,0 +1,270 @@
+<!--formulário de cadastro de usuarios-->
+
+<%- include('../partials/header'); %>
+<!-- Para utilizar essa nova rede social, o usuário deverá realizar um cadastro;-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <h1 class="mt-5">Cadastre-se</h1>
+
+            <form class="form mt-4" action="/usuarios/cadastrarUsuarios" method="POST" class="box">
+
+                <div class="form-group">
+                    <label for="nome" class="form-label mt-4">Nome Completo</label><br>
+
+                    <div class="input-group">
+                        <input required type="text" class="form-control" aria-label="Primeiro nome" id="nome" name="nome" placeholder="Primeiro nome" >
+
+                        <input required type="text" class="form-control" aria-label="Sobrenome" id="sobrenome" name="sobrenome" placeholder="Sobrenome" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input required type="number" class="form-control" aria-label="CPF" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" onkeydown="return onlynumber();">
+                </div>
+
+                <div class="form-group">
+                    <label for="profissao" class="form-label">Profissão</label>
+                    <input required type="text" class="form-control" aria-label="Pofissão" id="profissao" name="profissao" placeholder="Digite sua profissão">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input required type="text" class="form-control" aria-label="E-mail" id="email" name="email" placeholder="email@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input required type="number" class="form-control" aria-label="Telefone" id="telefone" name="telefone" placeholder="(xx)xxxxx-xxxx" onkeydown="return onlynumber();">
+                </div>
+
+                <div class="form-group">
+                    <label for="date" class="form-label">Data de Nascimento:</label><br>
+                    <input required type="date" aria-label="Data de Nascimento" id="date" name="date" min="1891-05-06" max="2021-05-06"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais" class="form-label">País</label><br>
+                <select required type="text" class="form-select" aria-label="País" id="pais" name="pais">
+                    <option style="background-color: #0f1626;" value="África do Sul">África do Sul</option>
+                    <option style="background-color: #0f1626;" value="Albânia">Albânia</option>
+                    <option style="background-color: #0f1626;" value="Alemanha">Alemanha</option>
+                    <option style="background-color: #0f1626;" value="Andorra">Andorra</option>
+                    <option style="background-color: #0f1626;" value="Angola">Angola</option>
+                    <option style="background-color: #0f1626;" value="Anguilla">Anguilla</option>
+                    <option style="background-color: #0f1626;" value="Antigua">Antigua</option>
+                    <option style="background-color: #0f1626;" value="Arábia Saudita">Arábia Saudita</option>
+                    <option style="background-color: #0f1626;" value="Argentina">Argentina</option>
+                    <option style="background-color: #0f1626;" value="Armênia">Armênia</option>
+                    <option style="background-color: #0f1626;" value="Aruba">Aruba</option>
+                    <option style="background-color: #0f1626;" value="Austrália">Austrália</option>
+                    <option style="background-color: #0f1626;" value="Áustria">Áustria</option>
+                    <option style="background-color: #0f1626;" value="Azerbaijão">Azerbaijão</option>
+                    <option style="background-color: #0f1626;" value="Bahamas">Bahamas</option>
+                    <option style="background-color: #0f1626;" value="Bahrein">Bahrein</option>
+                    <option style="background-color: #0f1626;" value="Bangladesh">Bangladesh</option>
+                    <option style="background-color: #0f1626;" value="Barbados">Barbados</option>
+                    <option style="background-color: #0f1626;" value="Bélgica">Bélgica</option>
+                    <option style="background-color: #0f1626;" value="Benin">Benin</option>
+                    <option style="background-color: #0f1626;" value="Bermudas">Bermudas</option>
+                    <option style="background-color: #0f1626;" value="Botsuana">Botsuana</option>
+                    <option style="background-color: #0f1626;" value="Brasil" selected>Brasil</option>
+                    <option style="background-color: #0f1626;" value="Brunei">Brunei</option>
+                    <option style="background-color: #0f1626;" value="Bulgária">Bulgária</option>
+                    <option style="background-color: #0f1626;" value="Burkina Fasso">Burkina Fasso</option>
+                    <option style="background-color: #0f1626;" value="botão">botão</option>
+                    <option style="background-color: #0f1626;" value="Cabo Verde">Cabo Verde</option>
+                    <option style="background-color: #0f1626;" value="Camarões">Camarões</option>
+                    <option style="background-color: #0f1626;" value="Camboja">Camboja</option>
+                    <option style="background-color: #0f1626;" value="Canadá">Canadá</option>
+                    <option style="background-color: #0f1626;" value="Cazaquistão">Cazaquistão</option>
+                    <option style="background-color: #0f1626;" value="Chade">Chade</option>
+                    <option style="background-color: #0f1626;" value="Chile">Chile</option>
+                    <option style="background-color: #0f1626;" value="China">China</option>
+                    <option style="background-color: #0f1626;" value="Cidade do Vaticano">Cidade do Vaticano</option>
+                    <option style="background-color: #0f1626;" value="Colômbia">Colômbia</option>
+                    <option style="background-color: #0f1626;" value="Congo">Congo</option>
+                    <option style="background-color: #0f1626;" value="Coréia do Sul">Coréia do Sul</option>
+                    <option style="background-color: #0f1626;" value="Costa do Marfim">Costa do Marfim</option>
+                    <option style="background-color: #0f1626;" value="Costa Rica">Costa Rica</option>
+                    <option style="background-color: #0f1626;" value="Croácia">Croácia</option>
+                    <option style="background-color: #0f1626;" value="Dinamarca">Dinamarca</option>
+                    <option style="background-color: #0f1626;" value="Djibuti">Djibuti</option>
+                    <option style="background-color: #0f1626;" value="Dominica">Dominica</option>
+                    <option style="background-color: #0f1626;" value="EUA">EUA</option>
+                    <option style="background-color: #0f1626;" value="Egito">Egito</option>
+                    <option style="background-color: #0f1626;" value="El Salvador">El Salvador</option>
+                    <option style="background-color: #0f1626;" value="Emirados Árabes">Emirados Árabes</option>
+                    <option style="background-color: #0f1626;" value="Equador">Equador</option>
+                    <option style="background-color: #0f1626;" value="Eritréia">Eritréia</option>
+                    <option style="background-color: #0f1626;" value="Escócia">Escócia</option>
+                    <option style="background-color: #0f1626;" value="Eslováquia">Eslováquia</option>
+                    <option style="background-color: #0f1626;" value="Eslovênia">Eslovênia</option>
+                    <option style="background-color: #0f1626;" value="Espanha">Espanha</option>
+                    <option style="background-color: #0f1626;" value="Estônia">Estônia</option>
+                    <option style="background-color: #0f1626;" value="Etiópia">Etiópia</option>
+                    <option style="background-color: #0f1626;" value="Fiji">Fiji</option>
+                    <option style="background-color: #0f1626;" value="Filipinas">Filipinas</option>
+                    <option style="background-color: #0f1626;" value="Finlândia">Finlândia</option>
+                    <option style="background-color: #0f1626;" value="França">França</option>
+                    <option style="background-color: #0f1626;" value="Gabão">Gabão</option>
+                    <option style="background-color: #0f1626;" value="Gâmbia">Gâmbia</option>
+                    <option style="background-color: #0f1626;" value="Gana">Gana</option>
+                    <option style="background-color: #0f1626;" value="Geórgia">Geórgia</option>
+                    <option style="background-color: #0f1626;" value="Gibraltar">Gibraltar</option>
+                    <option style="background-color: #0f1626;" value="Granada">Granada</option>
+                    <option style="background-color: #0f1626;" value="Grécia">Grécia</option>
+                    <option style="background-color: #0f1626;" value="Guadalupe">Guadalupe</option>
+                    <option style="background-color: #0f1626;" value="Guam">Guam</option>
+                    <option style="background-color: #0f1626;" value="Guatemala">Guatemala</option>
+                    <option style="background-color: #0f1626;" value="Guiana">Guiana</option>
+                    <option style="background-color: #0f1626;" value="Guiana Francesa">Guiana Francesa</option>
+                    <option style="background-color: #0f1626;" value="Guiné-bissau">Guiné-bissau</option>
+                    <option style="background-color: #0f1626;" value="Haiti">Haiti</option>
+                    <option style="background-color: #0f1626;" value="Holanda">Holanda</option>
+                    <option style="background-color: #0f1626;" value="Honduras">Honduras</option>
+                    <option style="background-color: #0f1626;" value="Hong Kong">Hong Kong</option>
+                    <option style="background-color: #0f1626;" value="Hungria">Hungria</option>
+                    <option style="background-color: #0f1626;" value="Iêmen">Iêmen</option>
+                    <option style="background-color: #0f1626;" value="Ilhas Cayman">Ilhas Cayman</option>
+                    <option style="background-color: #0f1626;" value="Ilhas Cook">Ilhas Cook</option>
+                    <option style="background-color: #0f1626;" value="Ilhas Curaçao">Ilhas Curaçao</option>
+                    <option style="background-color: #0f1626;" value="Ilhas Marshall">Ilhas Marshall</option>
+                    <option style="background-color: #0f1626;" value="Ilhas Turks & Caicos">Ilhas Turks & Caicos</option>
+                    <option style="background-color: #0f1626;" value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+                    <option style="background-color: #0f1626;" value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+                    <option style="background-color: #0f1626;" value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+                    <option style="background-color: #0f1626;" value="Índia">Índia</option>
+                    <option style="background-color: #0f1626;" value="Indonésia">Indonésia</option>
+                    <option style="background-color: #0f1626;" value="Inglaterra">Inglaterra</option>
+                    <option style="background-color: #0f1626;" value="Irlanda">Irlanda</option>
+                    <option style="background-color: #0f1626;" value="Islândia">Islândia</option>
+                    <option style="background-color: #0f1626;" value="Israel">Israel</option>
+                    <option style="background-color: #0f1626;" value="Itália">Itália</option>
+                    <option style="background-color: #0f1626;" value="Jamaica">Jamaica</option>
+                    <option style="background-color: #0f1626;" value="Japão">Japão</option>
+                    <option style="background-color: #0f1626;" value="Jordânia">Jordânia</option>
+                    <option style="background-color: #0f1626;" value="Kuwait">Kuwait</option>
+                    <option style="background-color: #0f1626;" value="Latvia">Latvia</option>
+                    <option style="background-color: #0f1626;" value="Líbano">Líbano</option>
+                    <option style="background-color: #0f1626;" value="Liechtenstein">Liechtenstein</option>
+                    <option style="background-color: #0f1626;" value="Lituânia">Lituânia</option>
+                    <option style="background-color: #0f1626;" value="Luxemburgo">Luxemburgo</option>
+                    <option style="background-color: #0f1626;" value="Macau">Macau</option>
+                    <option style="background-color: #0f1626;" value="Macedônia">Macedônia</option>
+                    <option style="background-color: #0f1626;" value="Madagascar">Madagascar</option>
+                    <option style="background-color: #0f1626;" value="Malásia">Malásia</option>
+                    <option style="background-color: #0f1626;" value="Malaui">Malaui</option>
+                    <option style="background-color: #0f1626;" value="Mali">Mali</option>
+                    <option style="background-color: #0f1626;" value="Malta">Malta</option>
+                    <option style="background-color: #0f1626;" value="Marrocos">Marrocos</option>
+                    <option style="background-color: #0f1626;" value="Martinica">Martinica</option>
+                    <option style="background-color: #0f1626;" value="Mauritânia">Mauritânia</option>
+                    <option style="background-color: #0f1626;" value="Mauritius">Mauritius</option>
+                    <option style="background-color: #0f1626;" value="México">México</option>
+                    <option style="background-color: #0f1626;" value="Moldova">Moldova</option>
+                    <option style="background-color: #0f1626;" value="Mônaco">Mônaco</option>
+                    <option style="background-color: #0f1626;" value="Montserrat">Montserrat</option>
+                    <option style="background-color: #0f1626;" value="Nepal">Nepal</option>
+                    <option style="background-color: #0f1626;" value="Nicarágua">Nicarágua</option>
+                    <option style="background-color: #0f1626;" value="Niger">Niger</option>
+                    <option style="background-color: #0f1626;" value="Nigéria">Nigéria</option>
+                    <option style="background-color: #0f1626;" value="Noruega">Noruega</option>
+                    <option style="background-color: #0f1626;" value="Nova Caledônia">Nova Caledônia</option>
+                    <option style="background-color: #0f1626;" value="Nova Zelândia">Nova Zelândia</option>
+                    <option style="background-color: #0f1626;" value="Omã">Omã</option>
+                    <option style="background-color: #0f1626;" value="Palau">Palau</option>
+                    <option style="background-color: #0f1626;" value="Panamá">Panamá</option>
+                    <option style="background-color: #0f1626;" value="Papua-nova Guiné">Papua-nova Guiné</option>
+                    <option style="background-color: #0f1626;" value="Paquistão">Paquistão</option>
+                    <option style="background-color: #0f1626;" value="Peru">Peru</option>
+                    <option style="background-color: #0f1626;" value="Polinésia Francesa">Polinésia Francesa</option>
+                    <option style="background-color: #0f1626;" value="Polônia">Polônia</option>
+                    <option style="background-color: #0f1626;" value="Porto Rico">Porto Rico</option>
+                    <option style="background-color: #0f1626;" value="Portugal">Portugal</option>
+                    <option style="background-color: #0f1626;" value="Qatar">Qatar</option>
+                    <option style="background-color: #0f1626;" value="Quênia">Quênia</option>
+                    <option style="background-color: #0f1626;" value="Rep. Dominicana">Rep. Dominicana</option>
+                    <option style="background-color: #0f1626;" value="Rep. Tcheca">Rep. Tcheca</option>
+                    <option style="background-color: #0f1626;" value="Reunion">Reunion</option>
+                    <option style="background-color: #0f1626;" value="Romênia">Romênia</option>
+                    <option style="background-color: #0f1626;" value="Ruanda">Ruanda</option>
+                    <option style="background-color: #0f1626;" value="Rússia">Rússia</option>
+                    <option style="background-color: #0f1626;" value="Saipan">Saipan</option>
+                    <option style="background-color: #0f1626;" value="Samoa Americana">Samoa Americana</option>
+                    <option style="background-color: #0f1626;" value="Senegal">Senegal</option>
+                    <option style="background-color: #0f1626;" value="Serra Leone">Serra Leone</option>
+                    <option style="background-color: #0f1626;" value="Seychelles">Seychelles</option>
+                    <option style="background-color: #0f1626;" value="Singapura">Singapura</option>
+                    <option style="background-color: #0f1626;" value="Síria">Síria</option>
+                    <option style="background-color: #0f1626;" value="Sri Lanka">Sri Lanka</option>
+                    <option style="background-color: #0f1626;" value="St. Kitts & Nevis">St. Kitts & Nevis</option>
+                    <option style="background-color: #0f1626;" value="St. Lúcia">St. Lúcia</option>
+                    <option style="background-color: #0f1626;" value="St. Vincent">St. Vincent</option>
+                    <option style="background-color: #0f1626;" value="Sudão">Sudão</option>
+                    <option style="background-color: #0f1626;" value="Suécia">Suécia</option>
+                    <option style="background-color: #0f1626;" value="Suiça">Suiça</option>
+                    <option style="background-color: #0f1626;" value="Suriname">Suriname</option>
+                    <option style="background-color: #0f1626;" value="Tailândia">Tailândia</option>
+                    <option style="background-color: #0f1626;" value="Taiwan">Taiwan</option>
+                    <option style="background-color: #0f1626;" value="Tanzânia">Tanzânia</option>
+                    <option style="background-color: #0f1626;" value="Togo">Togo</option>
+                    <option style="background-color: #0f1626;" value="Trinidad & Tobago">Trinidad & Tobago</option>
+                    <option style="background-color: #0f1626;" value="Tunísia">Tunísia</option>
+                    <option style="background-color: #0f1626;" value="Turquia">Turquia</option>
+                    <option style="background-color: #0f1626;" value="Ucrânia">Ucrânia</option>
+                    <option style="background-color: #0f1626;" value="Uganda">Uganda</option>
+                    <option style="background-color: #0f1626;" value="Uruguai">Uruguai</option>
+                    <option style="background-color: #0f1626;" value="Venezuela">Venezuela</option>
+                    <option style="background-color: #0f1626;" value="Vietnã">Vietnã</option>
+                    <option style="background-color: #0f1626;" value="Zaire">Zaire</option>
+                    <option style="background-color: #0f1626;" value="Zâmbia">Zâmbia</option>
+                    <option style="background-color: #0f1626;" value="Zimbábue">Zimbábue</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input required type="password" class="form-control" aria-label="Senha" id="senha" name="senha" maxlength="12" minlength="8" placeholder="Senha com no mínimo oito (8) dígitos"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="curriculo" class="form-label">Cadastre seu currículo</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="upload">Upload</span>
+                        </div>
+
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="file" name="file" aria-describedby="File currículo">
+                          <label class="custom-file-label" for="file">Escolher arquivo</label>
+                        </div>
+                        
+                    </div>
+                </div>
+<!--- Cada usuário poderá fazer 1 publicação de texto;-->
+                <div class="form-group">
+                    <label for="msg" class="form-label">Mini biografia</label>
+                    <textarea required type="text" class="form-control" aria-label="Textarea" id="msg" name="msg" maxlength="180" placeholder="Digite sua mensagem"></textarea>
+                </div>
+
+
+                <button type="submit" class="btn mb-3 btn-primary">Enviar</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer'); %>
+
+<!--onkeydown é o primeiro a disparar e podêmos pará-lo. Se tiveres um input podes evitar que a tecla premida escreva no input se tiveres um event handler associado.
+
+onkeypress é o segundo a disparar. De notar que este evento não é disparado em teclas que não geram caracteres, como os F1 ~ F12, tab, esc, etc. De notar que o keypress gera resultados diferentes para letra grande e pequena.
+
+onkeyup é disparado quando a tecla é largada e o seu input adicionado/registado no DOM. No caso de um input o novo caracter é inserido e não dá para cancelar, ou seja um input receberá o caractere.-->

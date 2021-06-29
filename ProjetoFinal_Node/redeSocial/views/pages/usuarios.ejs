@@ -1,0 +1,79 @@
+<!--- Deverá exibir em uma página, todos os usuários cadastrados e suas respectivas publicações;-->
+
+<%- include('../partials/header'); %>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h1>Lista de usuários</h1>
+                </div>
+
+                <div class="col-12 text-right">
+                    <a href="/usuarios/cadastrarUsuarios" class="btn btn-outline-primary my-3 text-center">Inserir usuario</a>
+                </div>
+            <div class="table-responsive">
+            <table class="table table-sm table-hover table-bordered" >
+               
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Profissão</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Data de nascimento</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+
+                <tbody style="border: 1px solid black;">
+                    <% usuarios.forEach(function(usuario) { %>
+                    <tr>
+                        <td><%= usuario.nome %></td>
+                        <td><%= usuario.sobrenome %></td>
+                        <td><%= usuario.profissao %></td>
+                        <td><%= usuario.email %></td>
+                        <td><%= usuario.telefone %></td>
+                        <td><%= usuario.date %></td>
+                        <td><%= usuario.pais %></td> 
+                        <td class="texto">
+
+                           <button type="button" class="btn btn-secondary" data-toggle="tooltip" title=<%= usuario.msg %>>Mini biografia</button>
+                              
+                        </td>
+
+                      
+                        <td>
+                            <a href="#" class="btn btn-sm btn-primary mb-2">Ver currículo </a> <br>
+                        </td>
+                        <td>
+                            <a href="/usuarios/editarUsuarios/<%= usuario._id %>" class="btn btn-sm btn-outline-warning mb-2">Editar</a>
+                        </td>
+                        <td>
+                            <a href="/usuarios/deletarUsuarios/<%= usuario._id %>" class="btn btn-sm btn-outline-danger mb-2" onclick="return confirm('Tem certeza que deseja excluir?');">Excluir</a>
+                        </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer'); %>
+
+<!--Dúvidas!!
+
+x a mensagem a ser exibida na parte "mini biografia só mostra a primeira palavra, como aumentar o tamanho da caixa de texto do tooltip?
+
+x como fazer upload de arquivo e mostrar na parte "currículo"
+
+x como colocar senha de login
+
+x como colocar botão buscar
+
+"-->
